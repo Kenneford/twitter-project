@@ -128,10 +128,10 @@ export default function Messages({tweets, users}) {
     return <div>Loading messages...</div>
   }
   return (
-    <div className='messages-cont'>
+    <div>
         {tweets.map((tweet, id) =>{
             // console.log(message)
-            const user = users.find(e => e._id === tweet.author_id)
+            // const user = users.find(e => e._id === tweet.author_id)
             // console.log(user)
             return(
               <div key={id}>

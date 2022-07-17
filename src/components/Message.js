@@ -8,18 +8,24 @@ export default function Message({tweet, users}) {
   }
   return (
     <div className='messages-cont'>
-      <div className='msg-content'>
-        <img src={users[5].picture} alt='' width='50px'  height="50px"/>
-        {/* <p>{message.author_id}</p> */}
-        <p>{users[5].username}</p>
-        <p>{tweet.date}</p>
-      </div>
+        <div className='msg-content'>
+        <div>
+            <div className='msg-flex'>
+                <img src={users[0].picture} alt='' width='50px'  height="50px"/>
+                {/* <p>{message.author_id}</p> */}
+                <p>{users[0].name.first} {users[0].name.last}</p>
+                <p className='nickName'>@{users[0].username}</p> .
+                <p>{tweet.date}</p>
+            </div>
+        </div>
+            <p className='more-dots'>...</p>
+        </div>
         <p className='tweet'>{tweet.text}</p>
         <div className='reactions'>
-          <p><i className="fa-regular fa-comment-dots"></i></p>
-          <p><i className="fa-regular fa-retweet"></i></p>
-          <p><i className="fa-regular fa-heart"></i></p>
-          <p><i className="fa-regular fa-share"></i></p>
+          <p className='comment'><i className="fa-regular fa-comment-dots"></i> {tweet.share}</p>
+          <p className='retweet'><i className="fa-regular fa-retweet"></i> {tweet.retweet}</p>
+          <p className='like'><i className="fa-regular fa-heart"></i> {tweet.likes}</p>
+          <p className='share'><i className="fa-regular fa-share"></i> {tweet.share}</p>
         </div>
     </div>
   )

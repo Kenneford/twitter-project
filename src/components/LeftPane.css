@@ -80,8 +80,8 @@
     border-radius: 50%;
     margin-right: 10px;
 }
-.user-name{
-    margin-top: -5px;
+.user-firstName{
+    margin-top: 5px;
 }
 .nickName{
     font-weight: 100;

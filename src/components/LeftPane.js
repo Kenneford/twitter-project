@@ -25,7 +25,7 @@ export default function LeftPane({users}) {
                 <a href='#'>
                 <img src={users[3].picture} alt='user-image' width='50px'/>
                 <div className='user-name'>
-                <p>{users[3].name.first} {users[3].name.last}</p>
+                    <p className='user-firstName'>{users[3].name.first} {users[3].name.last}</p>
                     <p className='nickName'>@{users[3].username}</p>
                 </div>
                 <div className='dots'>...</div>

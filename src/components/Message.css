@@ -1,24 +1,77 @@
+
 .messages-cont{
-    width: 90%;
+    width: 100%;
+    padding: 10px 75px;
     margin: auto;
+    border-top: 0.5px solid #4f4d4d;
 }
 .msg-content{
+    display: flex;
+    justify-content: space-between;
+}
+.msg-flex{
     display: flex;
 }
 .msg-content img{
     border-radius: 50%;
-    margin-right: 10px;
+    margin-right: 5px;
+    margin-left: -50px;
 }
 .msg-content p{
     margin: 5px;
 }
+.msg-content .more-dots{
+    color: #cccc;
+    font-size: 1.4em;
+}
 .tweet{
-    width: 82%;
+    width: 100%;
     margin: auto;
+    padding: 10px;
 }
 .reactions{
     width: 82%;
     margin: auto;
     display: flex;
     justify-content: space-around;
+}
+.comment:hover{
+    color: #38b8f8;
+}
+.fa-comment-dots{
+    padding: 5px;
+}
+.fa-comment-dots:hover{
+    background: #1a282f;
+    border-radius: 50%;
+}
+.retweet:hover{
+    color: #1dca2e;
+}
+.fa-retweet{
+    padding: 5px;
+}
+.fa-retweet:hover{
+    background: #0f3113;
+    border-radius: 50%;
+}
+.like:hover{
+    color: #f02e92;
+}
+.fa-heart{
+    padding: 5px;
+}
+.fa-heart:hover{
+    background: #3f162b;
+    border-radius: 50%;
+}
+.share:hover{
+    color: #20dcc6;
+}
+.fa-share{
+    padding: 5px;
+}
+.fa-share:hover{
+    background: #0f2e2a;
+    border-radius: 50%;
 }

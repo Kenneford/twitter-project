@@ -3,8 +3,10 @@
   height: 100vh;
 }
 .rightPane-search{
+  position: fixed;
     width: 90%;
     margin: auto;
+    margin-left: 18px;
 }
 .rightPane input{
     width: 305px;
@@ -14,20 +16,22 @@
     margin-left: 20px;
     border-radius: 20px;
     background: #3f3f3f;
+    z-index: 10;
 }
 .rightPane input::placeholder{
     padding-left:35px;
     color: #cccc;
+    z-index: 10;
 }
 .rightPane-search i{
-    position: absolute;
-    right: 505px;
-    top: 15px;
+    position: relative;
+    top: 3px;
+    right: 290px;
     color: #cccc;
 }
 .trends{
   width: 80%;
-  margin: 10px auto;
+  margin: 50px auto 10px;
   padding: 0px 0px 1px;
   background: #292929;
   color: #fff;
@@ -121,6 +125,7 @@
 }
 .follow h2{
     padding: 10px;
+    margin-left: 5px;
     font-size: 1em;
 }
 .userFollow{
@@ -133,12 +138,13 @@
 .userFollow img{
     border-radius: 50%;
     margin: 10px 5px;
+    margin-left: 15px;
     height: 50px;
     width: 50px;
   }
 .follow-btn{
     position: absolute;
-    right: 240px;
+    right: 390px;
     width: 80px;
     height: 25px;
     margin-top: 10px;
@@ -154,6 +160,7 @@
 }
 .user-name{
     font-size: 0.8em;
+    margin-top: 5px;
 }
 .nickName{
     font-weight: 100;
@@ -169,7 +176,7 @@
     width: 70%;
     margin: auto;
     display: flex;
-    color: #555454;
+    color: #cccc;
     font-size: .8em;
 }
 .policies p{

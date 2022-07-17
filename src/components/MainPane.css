@@ -1,21 +1,75 @@
 .mainPane{
-    width: 55%;
+    width: 45%;
     background: #292929;
     color: #fff;
+    border: 1px solid #4f4d4d;
 }
-.mainPane h2{
-    margin-left: 85px;
+.mainPane .h3{
+    width: 35.9%;
+    position: fixed;
+    top: 0;
+    padding-left: 20px;
     margin-bottom: 5px;
+    font-weight: 500;
+    background: #292929;
 }
 .user-tweet{
-    display: flex;
+    margin-top: 70px;
     margin-left: 75px;
     margin-bottom: 20px;
+}
+.user-tweet img{
+    border-radius: 50%;
+    margin-left: -55px;
 }
 .user-tweet input{
     background: transparent;
     border: none;
-    margin-left: 20px;
+    margin-left: 15px;
+    color: #fff;
+    font-size: 1.2em;
+}
+#tweet-input:focus{
+    border-color: #292929;
+    outline: 0;
+}
+.icons-button{
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10px;
+}
+.tweet-icons{
+    margin-top: 20px;
+}
+.tweet-icons i{
+    margin: 3px;
+    color: #2aa5e2;
+    padding: 5px;
+}
+.tweet-icons i:hover{
+    background: #1b1a1a;
+    border-radius: 50%;
+}
+.fa-clock{
+    padding-left: 10px;
+}
+.icons-button button{
+    width: 80px;
+    padding: 7px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 20px;
+    font-size: 1em;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #fff;
+    background: #29c3f7;
+    cursor: pointer;
+    transition: .2s ease-in;
+}
+.icons-button button:hover{
+    background: #1c9cc7;
 }
 .nickName{
     font-weight: 100;

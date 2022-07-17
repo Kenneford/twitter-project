@@ -2,6 +2,7 @@ import React from 'react'
 import './MainPane.css'
 
 export default function User({user}) {
+  console.log(user)
   return (
     <div className='mainPane'>
         {/* <h2>Home</h2> */}
