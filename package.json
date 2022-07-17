@@ -1,6 +1,6 @@
 {
-  "homepage": "http://Kenneford",
-  "name": "mini-twitter",
+  "homepage": "http://Kenneford.github.io/twitter-project",
+  "name": "twitter-project",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
