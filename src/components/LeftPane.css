@@ -1,0 +1,100 @@
+.leftPane{
+    width: 20%;
+    height: 100vh;
+    color: #fff;
+}
+.leftPane-cont{
+    /* width: 40%; */
+    height: inherit;
+    position: fixed;
+    margin-left: 5%;
+    padding-top: 25px;
+}
+.fa-twitter{
+    font-size: 1.5em;
+    cursor: pointer;
+    margin-left: 10px;
+    color: #29c3f7;
+}
+.fa-house{
+    margin-left: -2px;
+}
+.fa-house, .fa-envelope, .fa-bookmark{
+    margin-right: 10px;
+}
+.fa-bookmark{
+    margin-left: 5px;
+}
+.fa-bell, .fa-user{
+    margin-left: 2px;
+}
+.special{
+    margin-right: 10px;
+}
+.leftPane-icons{
+    position: absolute;
+    top: 60px;
+}
+.leftPane-icons i{
+    margin-top: 20px;
+    font-size: 1.3em;
+}
+.leftPane-icons a{
+    text-decoration: none;
+    padding: 10px;
+    color: #fff;
+}
+.leftPane-icons a:hover{
+    border-radius: 20px;
+    background: #303030;
+}
+.leftPane button{
+    width: 150px;
+    padding: 10px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 20px;
+    font-size: 1em;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #fff;
+    background: #29c3f7;
+    cursor: pointer;
+    transition: .2s ease-in;
+}
+.leftPane button:hover{
+    background: #1c9cc7;
+}
+.user{
+    position: absolute;
+    bottom: 10px;
+}
+.user a{
+    display: flex;
+    width: 200px;
+    height: 50px;
+    text-decoration: none;
+    color: #fff;
+}
+.user img{
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.user-name{
+    margin-top: -5px;
+}
+.nickName{
+    font-weight: 100;
+    color: #cccc;
+    margin-top: -15px;
+}
+.user a:hover{
+    background: #303030;
+    border-radius: 30px;
+}
+.dots{
+    position: absolute;
+    font-size: 1.5em;
+    right: 10px;
+    top: 2px;
+}

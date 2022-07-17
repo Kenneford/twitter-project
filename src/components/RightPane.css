@@ -1,0 +1,177 @@
+.rightPane{
+  width: 25%;
+  height: 100vh;
+}
+.rightPane-search{
+    width: 90%;
+    margin: auto;
+}
+.rightPane input{
+    width: 305px;
+    border: none;
+    padding: 10px;
+    margin-top: 5px;
+    margin-left: 20px;
+    border-radius: 20px;
+    background: #3f3f3f;
+}
+.rightPane input::placeholder{
+    padding-left:35px;
+    color: #cccc;
+}
+.rightPane-search i{
+    position: absolute;
+    right: 505px;
+    top: 15px;
+    color: #cccc;
+}
+.trends{
+  width: 80%;
+  margin: 10px auto;
+  padding: 0px 0px 1px;
+  background: #292929;
+  color: #fff;
+  border-radius: 10px;
+}
+.trends h2{
+  padding: 10px 10px 0;
+  font-size: 1em;
+  margin-bottom: -10px;
+}
+.politics p{
+  font-size: .7em;
+  padding: 10px;
+  color: #cccc;
+}
+.p-h3{
+  font-size: .8em;
+  padding: 10px;
+  margin-top: -30px;
+}
+.p-tweets{
+  margin-top: -30px;
+}
+.politics:hover{
+  background: #303030;
+    cursor: pointer;
+}
+
+.sports{
+  margin-top: -15px;
+}
+.sports:hover{
+  background: #303030;
+    cursor: pointer;
+}
+.sports p{
+  font-size: .7em;
+  padding: 10px;
+  color: #cccc;
+}
+.s-h3{
+  font-size: .8em;
+  padding: 10px;
+  margin-top: -30px;
+}
+.s-tweets{
+  margin-top: -30px;
+}
+.germany{
+  margin-top: -15px;
+}
+.germany:hover{
+  background: #303030;
+    cursor: pointer;
+}
+.germany p{
+  font-size: .7em;
+  padding: 10px;
+  color: #cccc;
+}
+.g-h3{
+  font-size: .8em;
+  padding: 10px;
+  margin-top: -30px;
+}
+.g-tweets{
+  margin-top: -30px;
+}
+.trends-btn{
+  width: 100%;
+  text-align: left;
+  border: none;
+  color: #338efc;
+  background: transparent;
+  padding: 10px
+}
+.trends-btn:hover{
+  background: #303030;
+  border-radius: 0 0 10px 10px;
+    cursor: pointer;
+}
+
+  /* Who to follow Styling */
+.follow{
+  width: 80%;
+  margin: 10px auto;
+  padding: 0px 0px 1px;
+  background: #292929;
+  color: #fff;
+  border-radius: 10px;
+}
+.follow h2{
+    padding: 10px;
+    font-size: 1em;
+}
+.userFollow{
+    display: flex;
+}
+.userFollow:hover{
+    background: #303030;
+    cursor: pointer;
+}
+.userFollow img{
+    border-radius: 50%;
+    margin: 10px 5px;
+    height: 50px;
+    width: 50px;
+  }
+.follow-btn{
+    position: absolute;
+    right: 240px;
+    width: 80px;
+    height: 25px;
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 20px;
+    border: none;
+    background: #fff;
+    transition: .3s ease-in-out;
+}
+.follow-btn:hover{
+    background: #29c3f7;
+    color: #fff;
+}
+.user-name{
+    font-size: 0.8em;
+}
+.nickName{
+    font-weight: 100;
+    color: #cccc;
+    margin-top: -15px;
+}
+
+.footer{
+    width: 100%;
+    padding: 5px;
+}
+.policies{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    color: #555454;
+    font-size: .8em;
+}
+.policies p{
+    margin: 2px;
+}

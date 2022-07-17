@@ -1,0 +1,16 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  background: #202020;
+}
+.App {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: auto;
+}
+.app-cont{
+  margin:0
+}
+

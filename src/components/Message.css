@@ -1,0 +1,24 @@
+.messages-cont{
+    width: 90%;
+    margin: auto;
+}
+.msg-content{
+    display: flex;
+}
+.msg-content img{
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.msg-content p{
+    margin: 5px;
+}
+.tweet{
+    width: 82%;
+    margin: auto;
+}
+.reactions{
+    width: 82%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
