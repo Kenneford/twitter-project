@@ -16,24 +16,40 @@
     border-radius: 50%;
     margin-right: 5px;
     margin-left: -50px;
+    cursor: pointer;
 }
 .msg-content p{
     margin: 5px;
+}
+.tweet-user:hover{
+    text-decoration: underline;
+}
+.div-dot, .tweet-date{
+    color: #cccc;
+}
+.tweet-date:hover{
+    bottom: 1px solid #cccc;
+    text-decoration: underline;
 }
 .msg-content .more-dots{
     color: #cccc;
     font-size: 1.4em;
 }
-.tweet{
+ a{
     width: 100%;
+    text-decoration: none;
     margin: auto;
     padding: 10px;
+    color: #fff;
 }
 .reactions{
     width: 82%;
     margin: auto;
     display: flex;
     justify-content: space-around;
+}
+.reactions p{
+    color: #cccc;
 }
 .comment:hover{
     color: #38b8f8;

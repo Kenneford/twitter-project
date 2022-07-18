@@ -78,7 +78,7 @@ export default function RightPane({users}) {
                 <p>Ads info</p>
                 <p>More...</p>
             </div>
-            <div className='policies'>
+            <div className='copy-right'>
                 <p>&copy; 2022 Twitter, Inc.</p>
             </div>
         </div>

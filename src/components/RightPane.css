@@ -153,6 +153,7 @@
     border: none;
     background: #fff;
     transition: .3s ease-in-out;
+    cursor: pointer;
 }
 .follow-btn:hover{
     background: #29c3f7;
@@ -181,4 +182,14 @@
 }
 .policies p{
     margin: 2px;
+}
+.policies p:hover{
+  text-decoration: underline;
+}
+.copy-right p{
+  width: 70%;
+    margin: auto;
+    display: flex;
+    color: #cccc;
+    font-size: .8em;
 }

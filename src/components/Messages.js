@@ -1,6 +1,7 @@
 import React from 'react';
 import Message from './Message';
 import { useState, useEffect } from 'react';
+import Tweets from './Tweets';
 
 
 // const allMessages = [   
@@ -136,10 +137,14 @@ export default function Messages({tweets, users}) {
             return(
               <div key={id}>
                 <Message
-                key={id}
                 tweet={tweet}
                 users={users} 
                 />
-                </div> )})
+                <Tweets tweets={tweets}
+                users={users} />
+                </div> 
+                )
+                })}
+    </div>
+  )
 }
-    </div>)}
