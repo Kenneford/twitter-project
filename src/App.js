@@ -305,16 +305,9 @@ function App() {
           <LeftPane 
           users={users}
           />
-          <>
-            <Routes>
-              <Route path='/' element={<MainPane 
+          <MainPane 
                 tweets={tweets} 
-                users={users}/>} 
-              />
-              {/* <Route path='tweet' element={<Tweets />} /> */}
-              {/* <Route path='/tweet' element={<Tweets />} /> */}
-            </Routes>
-          </>
+                users={users}/>
           <RightPane 
           users={users}
           />

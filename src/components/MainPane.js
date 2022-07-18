@@ -13,9 +13,9 @@ export default function MainPane({tweets, users}) {
 
   return (
     <div className='mainPane'>
-            <nav className='h3'>
-                <Link to="/">Home</Link>
-            </nav>
+            <h3 className='h3'>
+            <Link to="/">Home</Link>
+            </h3>
         <div className='user-tweet'>
                 <img src={users[3].picture} alt='user-image' width='50px'/>
                 <input type="text" placeholder="What's hapenning?" id='tweet-input'/>
@@ -34,7 +34,7 @@ export default function MainPane({tweets, users}) {
         <Messages tweets={tweets}
         users={users}/>
         <nav>
-        {/* <Link to="/tweets">Tweets</Link> */}
+        <Link to="/tweets">{tweets.text}</Link>
         </nav>
     </div>
   )

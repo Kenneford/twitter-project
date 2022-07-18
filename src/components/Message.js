@@ -1,6 +1,5 @@
 import React from 'react'
 import './Message.css'
-import {Link} from 'react-router-dom'
 
 export default function Message({tweet, users}) {
 
@@ -22,7 +21,7 @@ export default function Message({tweet, users}) {
         </div>
             <p className='more-dots'>...</p>
         </div>
-        <Link className='tweet' to={tweet}>{tweet.text}</Link>
+        <p className='tweet'>{tweet.text}</p>
         <div className='reactions'>
           <p className='comment'><i className="fa-regular fa-comment-dots"></i> {tweet.share}</p>
           <p className='retweet'><i className="fa-regular fa-retweet"></i> {tweet.retweet}</p>
