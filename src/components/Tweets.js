@@ -18,7 +18,7 @@ export default function User({users, tweet}) {
             </div>
             <p className='more-dots'><i className="fa-solid fa-ellipsis"></i></p>
           </div>
-          <div className='tweetText'><p><Link to="/" >{tweet.text}</Link></p></div>
+          <div className='tweetText'><p><Link to="/tweet" >{tweet.text}</Link></p></div>
           <div className='reactions'>
             <p className='comment'><i className="fa-regular fa-comment-dots" title='Reply'></i> {tweet.share}</p>
             <p className='retweet'><i className="fa-solid fa-code-compare" title='Retweet'></i> {tweet.retweet}</p>

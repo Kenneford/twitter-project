@@ -3,6 +3,8 @@ import LeftPane from './components/LeftPane';
 import MainPane from './components/MainPane';
 import RightPane from './components/RightPane';
 import React, { useState, useEffect } from "react";
+import { Link, Route, Routes } from "react-router-dom";
+import SingleTweet from './components/SingleTweet';
 
 
 const users = [   
@@ -244,36 +246,36 @@ const tweets = [
 
 ]
 
-const PageNotFound = () =>{
-  <div>404</div>
-}
+// const PageNotFound = () =>{
+//   <div>404</div>
+// }
 
 function App() {
-//   const [users, setUsers] = useState([])
-//   useEffect(() =>{
-//     const readUsers = async () =>{
-//       const response = await fetch(`
-//       https://mini2-2twitter.herokuapp.com/users/
-//       `)
-//       const result = await response.json()
-//       console.log(result)
-//       setUsers(result)
-//     }
-//     readUsers()
-//   }, [])
+  // const [users, setUsers] = useState([])
+  // useEffect(() =>{
+  //   const readUsers = async () =>{
+  //     const response = await fetch(`
+  //     https://mini2-2twitter.herokuapp.com/users/
+  //     `)
+  //     const result = await response.json()
+  //     console.log(result)
+  //     setUsers(result)
+  //   }
+  //   readUsers()
+  // }, [])
 
-//   const [messages, setMessages] = useState([])
-//   useEffect(() =>{
-//     const readMessages = async () =>{
-//       const response = await fetch(`
-//       https://mini2-2twitter.herokuapp.com/messages/
-//       `)
-//       const result = await response.json()
-//       console.log(result)
-//       setMessages(result)
-//     }
-//     readMessages()
-//   }, [])
+  // const [tweets, setTweets] = useState([])
+  // useEffect(() =>{
+  //   const readTweets = async () =>{
+  //     const response = await fetch(`
+  //     https://mini2-2twitter.herokuapp.com/messages/
+  //     `)
+  //     const result = await response.json()
+  //     console.log(result)
+  //     setTweets(result)
+  //   }
+  //   readTweets()
+  // }, [])
   
 
 
@@ -281,17 +283,17 @@ function App() {
 
 
 
-//   const [advice, setAdvice] = useState([])
-//     const url = 'https://api.adviceslip.com/advice'
-//     useEffect(() =>{
-//         const adviceData = async () =>{
-//         const response = await fetch(url)
-//         const json = await response.json()
-//         console.log(json.slip.advice)
-//         setAdvice(json.slip.advice)
-//     }
-//         adviceData()
-//     }, [])
+  // const [advice, setAdvice] = useState([])
+  //   const url = 'https://api.adviceslip.com/advice'
+  //   useEffect(() =>{
+  //       const adviceData = async () =>{
+  //       const response = await fetch(url)
+  //       const json = await response.json()
+  //       console.log(json.slip.advice)
+  //       setAdvice(json.slip.advice)
+  //   }
+  //       adviceData()
+  //   }, [])
 
 
   return (

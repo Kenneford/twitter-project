@@ -1,7 +1,8 @@
 import React from 'react'
 import './MainPane.css'
-import { Link } from "react-router-dom";
+import { Link, Route, Routes } from "react-router-dom";
 import Tweets from './Tweets';
+import SingleTweet from './SingleTweet';
 
 export default function MainPane({tweets, users}) {
 
@@ -12,7 +13,7 @@ export default function MainPane({tweets, users}) {
   return (
     <div className='mainPane'>
         <h3 className='h3'>
-        <Link to="/">Home</Link>
+        <Link to="/home">Home</Link>
         <i className="fa-brands fa-galactic-senate" title='Top Tweets'></i>
         </h3>
         <div className='user-tweet'>
@@ -37,6 +38,9 @@ export default function MainPane({tweets, users}) {
                 </div>
             )
         })}
+        <Routes>
+            <Route path='tweet' element={<SingleTweet users={users} tweet={tweets} />} />
+        </Routes>
     </div>
   )
 }

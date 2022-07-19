@@ -1,0 +1,16 @@
+.tweet-h3{
+    width: 35.9%;
+    position: fixed;
+    top: -20px;
+    padding: 15px 0 15px 20px;
+    background: #292929;
+}
+.fa-arrow-left{
+    margin-right: 45px;
+    padding: 10px;
+    cursor: pointer;
+}
+.fa-arrow-left:hover{
+    background: #303030;
+    border-radius: 50%;
+}
