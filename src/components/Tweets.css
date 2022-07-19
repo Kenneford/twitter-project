@@ -19,6 +19,7 @@
 .tweetUser-info img{
     border-radius: 50%;
     margin-right: 5px;
+    margin-left: 5px;
     cursor: pointer;
 }
 .tweet-user{
@@ -40,16 +41,26 @@
 }
 .more-dots{
     color: #cccc;
-    font-size: 1.4em;
+    font-size: 1.2em;
     cursor: pointer;
+    padding: 10px;
+    margin-top: 5px;
+}
+.more-dots:hover{
+    background: #1f3540;
+    border-radius: 50%;
+    color: #2aa5e2;
 }
 .tweetText p{
-    width: 80%;
-    text-decoration: none;
-    margin: auto;
-    margin-top: -30px;
-    color: #fff;
+    width: 90%;
+    margin-left: 75px;
+    margin-top: -25px;
+    padding: 7px;
     letter-spacing: .5px;
+}
+.tweetText a{
+    text-decoration: none;
+    color: #fff;
 }
 .reactions{
     width: 82%;

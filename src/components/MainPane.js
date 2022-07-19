@@ -16,7 +16,7 @@ export default function MainPane({tweets, users}) {
         <i className="fa-brands fa-galactic-senate" title='Top Tweets'></i>
         </h3>
         <div className='user-tweet'>
-            <img src={users[3].picture} alt='user-image' width='50px'/>
+            <img src={users[3].picture} alt='user-profile' width='50px'/>
             <input type="text" placeholder="What's hapenning?" id='tweet-input'/>
             <div className='icons-button'>
                 <div className='tweet-icons'>

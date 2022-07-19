@@ -1,6 +1,7 @@
 import React from 'react'
 import logo from '../logo.svg'
 import './LeftPane.css'
+import {Link} from 'react-router-dom'
 
 export default function LeftPane({users}) {
   return (
@@ -22,14 +23,14 @@ export default function LeftPane({users}) {
                 <button>Tweet</button>
             </div>
             <div className='user'>
-                <a href='#'>
-                <img src={users[3].picture} alt='user-image' width='50px'/>
+                <Link to='/'>
+                <img src={users[3].picture} alt='user-profile' width='50px'/>
                 <div className='user-name'>
                     <p className='user-firstName'>{users[3].name.first} {users[3].name.last}</p>
                     <p className='nickName'>@{users[3].username}</p>
                 </div>
                 <div className='dots'>...</div>
-                </a>
+                </Link>
             </div>
         </div>
     </div>
