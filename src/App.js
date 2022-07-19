@@ -3,11 +3,6 @@ import LeftPane from './components/LeftPane';
 import MainPane from './components/MainPane';
 import RightPane from './components/RightPane';
 import React, { useState, useEffect } from "react";
-import { Route, Routes, Link} from 'react-router-dom';
-import Tweets from './components/Tweets';
-import Message from './components/Message';
-// import 'bootstrap/dist/css/bootstrap.min.css'
-// import AllMessages from './components/AllMessages';
 
 
 const users = [   

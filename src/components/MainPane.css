@@ -4,17 +4,30 @@
     color: #fff;
     border: 1px solid #4f4d4d;
 }
-.mainPane .h3 a{
+.mainPane .h3{
+    display: flex;
+    justify-content: space-between;
     width: 35.9%;
     position: fixed;
-    top: 0;
-    padding: 10px 0 10px 20px;
+    top: -20px;
+    padding: 15px 0 15px 20px;
+    background: #292929;
+}
+.mainPane .h3 a{
     margin-bottom: 5px;
     font-weight: 500;
-    background: #292929;
     cursor: pointer;
     text-decoration: none;
     color: #fff;
+}
+.mainPane .h3 i{
+    margin-right: 10px;
+    padding: 10px;
+    font-size: 1.2em;
+}
+.mainPane .h3 i:hover{
+    border-radius: 50%;
+    background: #303030;
 }
 .user-tweet{
     margin-top: 70px;
@@ -48,11 +61,12 @@
 }
 .tweet-icons i{
     margin: 3px;
+    font-size: 1.2em;
     color: #2aa5e2;
-    padding: 5px;
+    padding: 10px;
 }
 .tweet-icons i:hover{
-    background: #1b1a1a;
+    background: #1f3540;
     border-radius: 50%;
 }
 .fa-clock{

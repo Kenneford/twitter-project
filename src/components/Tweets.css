@@ -1,0 +1,102 @@
+.tweet-content{
+    width: 100%;
+}
+.tweetContent-wrap{
+    border-top: 0.5px solid #4f4d4d;
+}
+.tweetUser-wrap{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 15px 0;
+}
+.tweetUser-info{
+    margin-top: 10px;
+}
+.tweetUser-info{
+    display: flex;
+    padding: 2px;
+}
+.tweetUser-info img{
+    border-radius: 50%;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.tweet-user{
+    font-family: 'roboto';
+    font-weight: 600;
+}
+.tweetUser-info p{
+    margin: 5px;
+}
+.tweet-user:hover{
+    text-decoration: underline;
+}
+.div-dot, .tweet-date{
+    color: #cccc;
+}
+.tweet-date:hover{
+    bottom: 1px solid #cccc;
+    text-decoration: underline;
+}
+.more-dots{
+    color: #cccc;
+    font-size: 1.4em;
+    cursor: pointer;
+}
+.tweetText p{
+    width: 80%;
+    text-decoration: none;
+    margin: auto;
+    margin-top: -30px;
+    color: #fff;
+    letter-spacing: .5px;
+}
+.reactions{
+    width: 82%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+}
+.reactions p{
+    color: #cccc;
+}
+.comment:hover{
+    color: #38b8f8;
+}
+.fa-comment-dots{
+    padding: 5px;
+}
+.fa-comment-dots:hover{
+    background: #1a282f;
+    border-radius: 50%;
+}
+.retweet:hover{
+    color: #1dca2e;
+}
+.fa-retweet{
+    padding: 5px;
+}
+.fa-retweet:hover{
+    background: #0f3113;
+    border-radius: 50%;
+}
+.like:hover{
+    color: #f02e92;
+}
+.fa-heart{
+    padding: 5px;
+}
+.fa-heart:hover{
+    background: #3f162b;
+    border-radius: 50%;
+}
+.share:hover{
+    color: #20dcc6;
+}
+.fa-share{
+    padding: 5px;
+}
+.fa-share:hover{
+    background: #0f2e2a;
+    border-radius: 50%;
+}

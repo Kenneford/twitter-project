@@ -1,9 +1,7 @@
 import React from 'react'
-import Messages from './Messages'
 import './MainPane.css'
 import { Link } from "react-router-dom";
-import Tweets from './Tweets'
-import logo from '../logo.svg'
+import Tweets from './Tweets';
 
 export default function MainPane({tweets, users}) {
 
@@ -13,29 +11,32 @@ export default function MainPane({tweets, users}) {
 
   return (
     <div className='mainPane'>
-            <h3 className='h3'>
-            <Link to="/">Home</Link>
-            </h3>
+        <h3 className='h3'>
+        <Link to="/">Home</Link>
+        <i className="fa-brands fa-galactic-senate" title='Top Tweets'></i>
+        </h3>
         <div className='user-tweet'>
-                <img src={users[3].picture} alt='user-image' width='50px'/>
-                <input type="text" placeholder="What's hapenning?" id='tweet-input'/>
+            <img src={users[3].picture} alt='user-image' width='50px'/>
+            <input type="text" placeholder="What's hapenning?" id='tweet-input'/>
             <div className='icons-button'>
                 <div className='tweet-icons'>
-                    <i className="fa-regular fa-image"></i>
-                    <i className="fa-thin fa-gif"></i>
-                    <i className="fa-regular fa-clipboard-question"></i>
-                    <i className="fa-regular fa-face-smile"></i>
-                    <i className="fa-regular fa-clock"></i>
-                    <i className="fa-light fa-location-smile"></i>
+                    <i className="fa-regular fa-image" title='Media'></i>
+                    <i className="fa-solid fa-g" title='GIF'></i>
+                    <i className="fa-solid fa-align-left" title='Poll'></i>
+                    <i className="fa-regular fa-face-smile" title='Emoji'></i>
+                    <i className="fa-regular fa-clock" title='Schedule'></i>
+                    <i className="fa-brands fa-sourcetree" title='Location'></i>
                 </div>
                 <button>Tweet</button>
             </div>
         </div>
-        <Messages tweets={tweets}
-        users={users}/>
-        <nav>
-        <Link to="/tweets">{tweets.text}</Link>
-        </nav>
+        {tweets.map((tweet, index)=>{
+            return(
+                <div key={index} className="mainPane-tweet">
+                    <Tweets users={users} tweet={tweet} />
+                </div>
+            )
+        })}
     </div>
   )
 }
