@@ -19,7 +19,7 @@ export default function RightPane({users}) {
             </div>
             <div className='sports'>
                 <p className='s-trend'>Sports . Trending</p>
-                <h3 className='s-h3'>#JustinForPresident2022</h3>
+                <h3 className='s-h3'>#Qatar2022</h3>
                 <p className='s-tweets'>500.2K Tweets</p>
             </div>
             <div className='germany'>
@@ -35,7 +35,7 @@ export default function RightPane({users}) {
             <div className='userFollow'>
                 <img src={users[0].picture} alt='user-image1'/>
                 <div className='user-name'>
-                    <p>{users[0].name.first} {users[0].name.last}</p>
+                    <p className='tweet-user'>{users[0].name.first} {users[0].name.last}</p>
                     <p className='nickName'>@{users[0].username}</p>
                 </div>
                 <button className="follow-btn"> Follow </button>
@@ -43,7 +43,7 @@ export default function RightPane({users}) {
             <div className='userFollow'>
                 <img src={users[1].picture} alt='user-image1'/>
                 <div className='user-name'>
-                    <p>{users[1].name.first} {users[1].name.last} </p>
+                    <p className='tweet-user'>{users[1].name.first} {users[1].name.last} </p>
                     <p className='nickName'>@{users[1].username}</p>
                 </div>
                 <button className="follow-btn"> Follow </button>
@@ -51,7 +51,7 @@ export default function RightPane({users}) {
             <div className='userFollow'>
                 <img src={users[4].picture} alt='user-image1'/>
                 <div className='user-name'>
-                    <p>{users[4].name.first} {users[4].name.last} </p>
+                    <p className='tweet-user'>{users[4].name.first} {users[4].name.last} </p>
                     <p className='nickName'>@{users[4].username}</p>
                 </div>
                 <button className="follow-btn"> Follow </button>
@@ -59,11 +59,12 @@ export default function RightPane({users}) {
             <div className='userFollow'>
                 <img src={users[6].picture} alt='user-image1'/>
                 <div className='user-name'>
-                    <p>{users[6].name.first} {users[6].name.last} </p>
+                    <p className='tweet-user'>{users[6].name.first} {users[6].name.last} </p>
                     <p className='nickName'>@{users[6].username}</p>
                 </div>
                 <button className="follow-btn"> Follow </button>
             </div>
+            <button className='trends-btn'>Show more</button>
         </div>
 
         <div className='footer'>
