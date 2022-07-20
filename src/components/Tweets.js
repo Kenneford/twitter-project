@@ -1,13 +1,14 @@
 import React from 'react'
 import './Tweets.css'
-import {Link} from 'react-router-dom'
+import {Link, Route, Routes } from 'react-router-dom'
+import SingleTweet from './SingleTweet'
 
-export default function User({users, tweet}) {
+export default function User({user, tweets}) {
   return (
     <div className='tweet-content'>
-      {users.map((user, user_id)=>{
+      {tweets.map((tweet, index)=>{
       return(
-        <div key={user_id} className='tweetContent-wrap'>
+        <div key={index} className='tweetContent-wrap'>
           <div className='tweetUser-wrap'>
             <div className='tweetUser-info'>
               <img src={user.picture} alt='user-profile' width='50px'  height="50px"/>
@@ -18,7 +19,7 @@ export default function User({users, tweet}) {
             </div>
             <p className='more-dots'><i className="fa-solid fa-ellipsis"></i></p>
           </div>
-          <div className='tweetText'><p><Link to="/tweet" >{tweet.text}</Link></p></div>
+          <div className='tweetText'><p><Link to={`/user-tweet/${tweet.author_id}`} >{tweet.text}</Link></p></div>
           <div className='reactions'>
             <p className='comment'><i className="fa-regular fa-comment-dots" title='Reply'></i> {tweet.share}</p>
             <p className='retweet'><i className="fa-solid fa-code-compare" title='Retweet'></i> {tweet.retweet}</p>
@@ -28,6 +29,11 @@ export default function User({users, tweet}) {
         </div>
       )
   })}
+  <Routes>
+      <Route path='/user-tweet/:author_id' 
+      element={<SingleTweet user={user} tweet={tweets} />} 
+      />
+  </Routes>
     </div>
   )
 }

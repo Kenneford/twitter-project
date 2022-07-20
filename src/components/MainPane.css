@@ -4,31 +4,6 @@
     color: #fff;
     border: 1px solid #4f4d4d;
 }
-.mainPane .h3{
-    display: flex;
-    justify-content: space-between;
-    width: 35.9%;
-    position: fixed;
-    top: -20px;
-    padding: 15px 0 15px 20px;
-    background: #292929;
-}
-.mainPane .h3 a{
-    margin-bottom: 5px;
-    font-weight: 500;
-    cursor: pointer;
-    text-decoration: none;
-    color: #fff;
-}
-.mainPane .h3 i{
-    margin-right: 10px;
-    padding: 10px;
-    font-size: 1.2em;
-}
-.mainPane .h3 i:hover{
-    border-radius: 50%;
-    background: #303030;
-}
 .user-tweet{
     margin-top: 70px;
     margin-left: 75px;
@@ -40,6 +15,7 @@
     margin-top: 10px;
     margin-left: -55px;
     cursor: pointer;
+    z-index: 1;
 }
 .user-tweet input{
     background: transparent;

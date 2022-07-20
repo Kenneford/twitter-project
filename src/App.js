@@ -145,7 +145,7 @@ const tweets = [
     },
 
     {"_id": 103,
-    "author_id": 102,
+    "author_id": 103,
     "date":"2011-06-17T21:01:09.476Z",
     "text":"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
     "likes":332,
@@ -155,7 +155,7 @@ const tweets = [
     },
 
     {"_id": 104,
-    "author_id": 103,
+    "author_id": 104,
     "date":"2010-08-18T21:11:09.476Z",
     "text":"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
     "likes":23,
@@ -165,7 +165,7 @@ const tweets = [
     },
 
     {"_id": 105,
-    "author_id": 104,
+    "author_id": 105,
     "date":"2009-05-17T21:01:09.476Z",
     "text":"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
     "likes":373,
@@ -175,7 +175,7 @@ const tweets = [
     },
 
     {"_id": 106,
-    "author_id": 105,
+    "author_id": 106,
     "date":"2010-05-15T21:11:09.476Z",
     "text":"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
     "likes":20,
@@ -185,7 +185,7 @@ const tweets = [
     },
 
     {"_id": 107,
-    "author_id": 102,
+    "author_id": 107,
     "date":"2011-06-17T21:01:09.476Z",
     "text":"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
     "likes":143,
@@ -195,62 +195,21 @@ const tweets = [
     },
 
     {"_id": 108,
-    "author_id": 106,
+    "author_id": 108,
     "date":"2010-08-18T21:11:09.476Z",
     "text":"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
     "likes":523,
     "share": 660,
     "retweet": 317,
     "comments": 294
-    },
-
-    {"_id": 109,
-    "author_id": 105,
-    "date":"2009-05-07T21:01:09.476Z",
-    "text":"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
-    "likes":133,
-    "share": 97,
-    "retweet": 121,
-    "comments":117
-    },
-
-    {"_id": 110,
-    "author_id": 104,
-    "date":"2010-05-17T21:11:09.476Z",
-    "text":"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
-    "likes":231,
-    "share": 265,
-    "retweet": 217,
-    "comments": 301
-    },
-
-    {"_id": 111,
-    "author_id": 104,
-    "date":"2011-06-11T21:01:09.476Z",
-    "text":"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
-    "likes":31,
-    "share": 64,
-    "retweet": 81,
-    "comments":66
-    },
-
-    {"_id": 112,
-    "author_id": 108,
-    "date":"2012-08-18T21:11:09.476Z",
-    "text":"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.",
-    "likes":43,
-    "share": 23,
-    "retweet": 57,
-    "comments": 62
     }
-
 ]
 
 // const PageNotFound = () =>{
 //   <div>404</div>
 // }
 
-function App() {
+
   // const [users, setUsers] = useState([])
   // useEffect(() =>{
   //   const readUsers = async () =>{
@@ -278,11 +237,6 @@ function App() {
   // }, [])
   
 
-
-
-
-
-
   // const [advice, setAdvice] = useState([])
   //   const url = 'https://api.adviceslip.com/advice'
   //   useEffect(() =>{
@@ -295,7 +249,8 @@ function App() {
   //       adviceData()
   //   }, [])
 
-
+  
+  function App() {
   return (
     <div className="App">
         {/* <p>{advice}</p> */}
@@ -308,7 +263,6 @@ function App() {
           <RightPane 
           users={users}
           />
-          
     </div>
   );
 }

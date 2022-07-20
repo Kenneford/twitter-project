@@ -82,13 +82,13 @@
     border-radius: 50%;
 }
 .retweet:hover{
-    color: #1dca2e;
+    color: #caa71d;
 }
 .fa-code-compare{
     padding: 10px;
 }
 .fa-code-compare:hover{
-    background: #0f3113;
+    background: #443b18;
     border-radius: 50%;
 }
 .like:hover{

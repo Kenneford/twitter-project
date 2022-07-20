@@ -7,6 +7,7 @@
     width: 90%;
     margin: auto;
     margin-left: 18px;
+    z-index: 10;
 }
 .rightPane input{
     width: 305px;
@@ -16,7 +17,6 @@
     margin-left: 20px;
     border-radius: 20px;
     background: #3f3f3f;
-    z-index: 10;
 }
 .rightPane input::placeholder{
     padding-left:35px;
@@ -40,22 +40,24 @@
 .trends h2{
   padding: 10px 10px 0;
   font-size: 1em;
-  margin-bottom: -10px;
 }
-.politics p{
+.trend-wrap{
+  margin-bottom: -11px;
+}
+.trend-wrap p{
   font-size: .7em;
   padding: 10px;
   color: #cccc;
 }
-.p-h3{
+.trend-hashTag{
   font-size: .8em;
   padding: 10px;
   margin-top: -30px;
 }
-.p-tweets{
+.trend-tweets{
   margin-top: -30px;
 }
-.politics:hover{
+.trend-wrap:hover{
   background: #303030;
     cursor: pointer;
 }
