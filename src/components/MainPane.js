@@ -1,13 +1,16 @@
 import React from 'react'
 import './MainPane.css'
 import { Link} from "react-router-dom";
-import Tweets from './Tweets';
+import Home from './Home';
 import Header from '../Header';
+import UsersData from './UsersData';
+import TweetsData from './TweetsData';
 
-export default function MainPane({tweets, users}) {
+export default function MainPane() {
+    const users = UsersData()
+    const tweets = TweetsData()
   return (
     <>
-        
         <div className='mainPane'>
             <Header />
             <div className='user-tweet'>
@@ -28,7 +31,7 @@ export default function MainPane({tweets, users}) {
             {users.map((user, index)=>{
                 return(
                     <div key={index} >
-                        <Tweets user={user} tweets={tweets} />
+                        <Home user={user} tweets={tweets} />
                     </div>
                 )
             })}

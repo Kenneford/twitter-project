@@ -2,8 +2,11 @@ import React from 'react'
 import logo from '../logo.svg'
 import './LeftPane.css'
 import {Link} from 'react-router-dom'
+import UsersData from './UsersData'
 
-export default function LeftPane({users}) {
+export default function LeftPane() {
+    const users = UsersData()
+    console.log(users)
   return (
     <div className='leftPane'>
         <div className='leftPane-cont'>
@@ -24,12 +27,12 @@ export default function LeftPane({users}) {
             </div>
             <div className='user'>
                 <Link to='/'>
-                <img src={users[3].picture} alt='user-profile' width='50px'/>
-                <div className='user-name'>
-                    <p className='user-firstName'>{users[3].name.first} {users[3].name.last}</p>
-                    <p className='nickName'>@{users[3].username}</p>
-                </div>
-                <div className='dots'>...</div>
+                    <img src={users[3].picture} alt='user-profile' width='50px'/>
+                    <div className='user-name'>
+                        <p className='user-firstName'>{users[3].name.first} {users[3].name.last}</p>
+                        <p className='nickName'>@{users[3].username}</p>
+                    </div>
+                    <div className='dots'>...</div>
                 </Link>
             </div>
         </div>

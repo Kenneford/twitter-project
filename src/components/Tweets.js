@@ -1,39 +1,39 @@
 import React from 'react'
 import './Tweets.css'
-import {Link, Route, Routes } from 'react-router-dom'
-import SingleTweet from './SingleTweet'
+import {useNavigate, useParams} from 'react-router-dom';
 
-export default function User({user, tweets}) {
+export default function SingleTweet({user, tweet}) {
+    const {author_id} = useParams();
+
+    const navigate = useNavigate()
+
+    // const navigateBack = () =>{
+    //     navigate("/home")
+    // }
   return (
-    <div className='tweet-content'>
-      {tweets.map((tweet, index)=>{
-      return(
-        <div key={index} className='tweetContent-wrap'>
-          <div className='tweetUser-wrap'>
-            <div className='tweetUser-info'>
-              <img src={user.picture} alt='user-profile' width='50px'  height="50px"/>
-              <p className='tweet-user'>{user.name.first} {user.name.last}</p>
-              <p className='nickName'>@{user.username}</p> 
-              <div className='div-dot'>.</div>
-              <p className='tweet-date'>{tweet.date}</p>
-            </div>
-            <p className='more-dots'><i className="fa-solid fa-ellipsis"></i></p>
-          </div>
-          <div className='tweetText'><p><Link to={`/user-tweet/${tweet.author_id}`} >{tweet.text}</Link></p></div>
-          <div className='reactions'>
-            <p className='comment'><i className="fa-regular fa-comment-dots" title='Reply'></i> {tweet.share}</p>
-            <p className='retweet'><i className="fa-solid fa-code-compare" title='Retweet'></i> {tweet.retweet}</p>
-            <p className='like'><i className="fa-regular fa-heart" title='Like'></i> {tweet.likes}</p>
-            <p className='share'><i className="fa-regular fa-paper-plane" title='Share'></i> {tweet.share}</p>
-          </div>
+    <div className='singlePane'>
+        <h3 className='tweet-h3'>
+        {/* <i onClick={navigateBack} className="fa-solid fa-arrow-left"></i>Tweet */}
+        <i onClick={() =>navigate('/home')} className="fa-solid fa-arrow-left"></i>Tweet
+        </h3>
+        <div className='tweet-content'>
+            {tweet.filter(tweet => tweet.author_id === author_id).map((tweet, index) =>{
+                return(
+                    <div key={index}>
+                        <div className='tweetUser-wrap'>
+                            <div className='tweetUser-info'>
+                                <img src={user.picture} alt='user-profile' width='50px'  height="50px"/>
+                                <p className='tweet-user'>{user.name.first} {user.name.last}</p>
+                                <p className='nickName'>@{user.username}</p> 
+                                <div className='div-dot'>.</div>
+                                <p className='tweet-date'>{tweet.date}</p>
+                            </div>
+                            <p className='more-dots'><i className="fa-solid fa-ellipsis"></i></p>
+                        </div>
+                    </div>
+                )
+            })}
         </div>
-      )
-  })}
-  <Routes>
-      <Route path='/user-tweet/:author_id' 
-      element={<SingleTweet user={user} tweet={tweets} />} 
-      />
-  </Routes>
     </div>
   )
 }

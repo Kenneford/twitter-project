@@ -11,3 +11,24 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.empty-page{
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.empty-page h1{
+  margin-top: 50px;
+  color: #fff;
+}
+.empty-page-btn{
+  border: none;
+  padding: 5px 10px;
+  font-size: 1.2em;
+  background: #1e90ff;
+  color: #fff;
+  border-radius: 20px;
+}
+.empty-page-btn:hover{
+  background: #1679dc;
+}

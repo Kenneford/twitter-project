@@ -1,8 +1,9 @@
 import React from 'react'
 import './RightPane.css'
+import UsersData from './UsersData';
 
-export default function RightPane({users}) {
-
+export default function RightPane() {
+    const users = UsersData()
   return (
     <div className='rightPane'>
         <div className='rightPane-search'>

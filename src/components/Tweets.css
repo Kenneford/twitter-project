@@ -1,113 +1,17 @@
-.tweet-content{
-    width: 100%;
+.tweet-h3{
+    width: 35.8%;
+    position: fixed;
+    top: -20px;
+    padding: 15px 0 15px 20px;
+    background: #292929;
+    z-index: 10;
 }
-.tweetContent-wrap{
-    border-top: 0.5px solid #4f4d4d;
-}
-.tweetUser-wrap{
-    display: flex;
-    justify-content: space-between;
-    margin: 0 15px 0;
-}
-.tweetUser-info{
-    margin-top: 10px;
-}
-.tweetUser-info{
-    display: flex;
-    padding: 2px;
-}
-.tweetUser-info img{
-    border-radius: 50%;
-    margin-right: 5px;
-    margin-left: 5px;
+.fa-arrow-left{
+    margin-right: 45px;
+    padding: 10px;
     cursor: pointer;
 }
-.tweet-user{
-    font-family: 'roboto';
-    font-weight: 600;
-}
-.tweetUser-info p{
-    margin: 5px;
-}
-.tweet-user:hover{
-    text-decoration: underline;
-}
-.div-dot, .tweet-date{
-    color: #cccc;
-}
-.tweet-date:hover{
-    bottom: 1px solid #cccc;
-    text-decoration: underline;
-}
-.more-dots{
-    color: #cccc;
-    font-size: 1.2em;
-    cursor: pointer;
-    padding: 10px;
-    margin-top: 5px;
-}
-.more-dots:hover{
-    background: #1f3540;
-    border-radius: 50%;
-    color: #2aa5e2;
-}
-.tweetText p{
-    width: 90%;
-    margin-left: 75px;
-    margin-top: -25px;
-    padding: 7px;
-    letter-spacing: .5px;
-}
-.tweetText a{
-    text-decoration: none;
-    color: #fff;
-}
-.reactions{
-    width: 82%;
-    margin: auto;
-    display: flex;
-    justify-content: space-around;
-}
-.reactions p{
-    color: #cccc;
-}
-.comment:hover{
-    color: #38b8f8;
-}
-.fa-comment-dots{
-    padding: 10px;
-}
-.fa-comment-dots:hover{
-    background: #1a282f;
-    border-radius: 50%;
-}
-.retweet:hover{
-    color: #caa71d;
-}
-.fa-code-compare{
-    padding: 10px;
-}
-.fa-code-compare:hover{
-    background: #443b18;
-    border-radius: 50%;
-}
-.like:hover{
-    color: #f02e92;
-}
-.fa-heart{
-    padding: 10px;
-}
-.fa-heart:hover{
-    background: #3f162b;
-    border-radius: 50%;
-}
-.share:hover{
-    color: #20dcc6;
-}
-.fa-paper-plane{
-    padding: 10px;
-}
-.fa-paper-plane:hover{
-    background: #0f2e2a;
+.fa-arrow-left:hover{
+    background: #303030;
     border-radius: 50%;
 }
